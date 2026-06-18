@@ -1,7 +1,7 @@
 {
-    "name": "assignment-1--flex",
+    "name": "assignment-2--grid",
     "version": "1.0.0",
-    "main": "cypress.js",
+    "main": "index.html",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },

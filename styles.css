@@ -1,0 +1,105 @@
+
+/* This file contains the styles for the index.html page.
+   It includes styles for the background image, top, center, and bottom sections,
+   ensuring that the layout is displayed correctly with flex properties. */
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000003936_1719557332_background.png) center/cover no-repeat;
+  z-index: -1;
+}
+
+.top__left,
+.top__right,
+.bottom__left,
+.bottom__right,
+.center__container {
+  padding: 12px 18px;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.top,
+.bottom,
+.center {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.top,
+.bottom {
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+}
+
+.top__left,
+.top__right,
+.bottom__left,
+.bottom__right {
+  display: flex;
+  align-items: center;
+}
+
+.top {
+  top: 0;
+}
+
+.top__left {
+  background-color: #f6bf8e;
+}
+
+.top__right {
+  background-color: #9bd0ff;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.bottom__left {
+  background-color: #d8b4f8;
+}
+
+.bottom__right {
+  background-color: #f7a4a4;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+}
+
+.center__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-align: center;
+  background-color: #bfe8b0;
+}
